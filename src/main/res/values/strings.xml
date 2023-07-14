@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Easy access</string>
+    <string name="username">       Enter your username</string>
+    <string name="password">       Enter your password</string>
+    <string name="firstname">First name:</string>
+    <string name="signin">sign in</string>
+    <string name="signup">sign up</string>
+    <string name="lastname">Last Name:</string>
+    <string name="Enterfirstname">   Enter first name</string>
+    <string name="usernamed">Username:</string>
+    <string name="Enterphoneno" >   Enter phone number</string>
+    <string name="register">register</string>
+    <string name="phoneno">Phone Num:</string>
+    <string name="Enterlastname">   Enter last name</string>
+    <string name="dontt">Dont have an account?</string>
+    <string name="retype">Re-type password</string>
+    <string name="course">Select course</string>
+    <string name="level">Select level</string>
+    <string name="button1">Start</string>
+    <string name="app_id">ca-app-pub-9616934163180201~4255612928</string>
+    <string name="test_ad">ca-app-pub-3940256099942544/1033173712</string>
+</resources>

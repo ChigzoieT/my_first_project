@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingPrefix" android:layout_height="wrap_content" android:layout_width="match_parent" android:scrollbars="vertical">
+    
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#C5C6D0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="RedundantNamespace,ScrollViewSize">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/course"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="0dp"/>
+
+
+        <TextView
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/level"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/sp1"
+            android:layout_height="40dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="0dp"/>
+
+        <Spinner
+            android:layout_marginEnd="40dp"
+            android:id="@+id/sp2"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="15dp"
+        android:layout_gravity="end"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="120dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:text="@string/button1"
+            android:layout_height="50dp">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/border_data"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_gravity="center"
+        android:layout_height="150dp">
+
+       <androidx.core.widget.NestedScrollView
+           android:layout_width="wrap_content"
+           android:scrollbars="vertical"
+           android:layout_height="wrap_content">
+           <TextView
+               android:textColor="@color/teal_700"
+               android:layout_width="wrap_content"
+               android:textSize="18sp"
+               android:id="@+id/question"
+               android:layout_height="wrap_content">
+
+           </TextView>
+       </androidx.core.widget.NestedScrollView>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:background="@drawable/border_data_down"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="250dp"
+        tools:ignore="VisualLintBounds">
+
+      <androidx.core.widget.NestedScrollView
+          android:layout_width="wrap_content"
+          android:scrollbars="vertical"
+          android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:textColor="@color/teal_700"
+              android:textSize="18sp"
+              android:id="@+id/answers"
+              android:layout_height="wrap_content">
+
+          </TextView>
+      </androidx.core.widget.NestedScrollView>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessLeaf,VisualLintBounds">
+
+        <Button
+            android:id="@+id/prev"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:text="Prev"
+            tools:ignore="ButtonStyle,HardcodedText,VisualLintBounds,TextContrastCheck">
+
+        </Button>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="0dp"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="5dp"
+            android:text="Next"
+            tools:ignore="ButtonStyle,HardcodedText,VisualLintBounds,TextContrastCheck">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

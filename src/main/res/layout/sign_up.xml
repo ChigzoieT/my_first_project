@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content" android:layout_width="match_parent" android:scrollbars="vertical">
+<LinearLayout
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ScrollViewSize">
+
+
+       <TextView
+           android:layout_marginTop="150dp"
+           android:textColor="@color/teal_700"
+           android:layout_width="wrap_content"
+           android:text="@string/app_name"
+           android:textSize="50sp"
+           android:textStyle="bold"
+           android:layout_gravity="center"
+           android:layout_height="wrap_content">
+
+       </TextView>
+
+
+    <EditText
+        android:id="@+id/usernamef"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:hint="            Enter your username"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        tools:ignore="Autofill,HardcodedText">
+
+    </EditText>
+
+    <EditText
+        android:layout_width="300dp"
+        android:id="@+id/password"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="            Enter your passsword"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        tools:ignore="Autofill,HardcodedText">
+
+    </EditText>
+
+    
+    <Button
+        android:id="@+id/clicked"
+        android:textStyle="bold"
+        android:layout_width="150dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#ffffff"
+        android:text="@string/signin"
+        android:background="@drawable/bu_data"
+        android:layout_gravity="center"
+        android:layout_height="60dp"></Button>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/teal_700"
+        android:text="Haven't been confirmed?"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText,VisualLintLongText" />
+
+
+       <TextView
+           android:layout_marginStart="5dp"
+           android:layout_marginTop="10dp"
+           android:layout_width="wrap_content"
+           android:textColor="@color/teal_700"
+           android:text="Whatsapp: +2348039126581"
+           android:textSize="25sp"
+           android:textStyle="bold"
+           android:layout_height="wrap_content"
+           tools:ignore="HardcodedText,VisualLintLongText,VisualLintBounds" />
+
+
+
+
+</LinearLayout>
+</ScrollView>
